@@ -44,7 +44,11 @@ header{
   height: 64px;
 
 }
+nav ul{
+  display: flex;
+  justify-content: flex-end;
 
+}
 
 nav li{
   display: inline-flex;
@@ -52,7 +56,6 @@ nav li{
   padding-left: 0px;
   height: 64px;
   align-items: center;
-  margin-left:-5px
 }
 
 nav li:last-child{
@@ -85,9 +88,6 @@ li a {
     width: 100%;
   }
 
-  header .content {
-  }
-
   header .mobile ul {
     display: flex;
     justify-content: space-around;
@@ -95,4 +95,82 @@ li a {
     width: 100%;
     height: 64px;
   }
+}
+
+.cont .one{
+  margin-top:8px;
+  padding-bottom: 32px;
+  background-color: 	#DCDCDC;
+  display: flex;
+  align-items: center;
+}
+
+.picture img{
+ width: 60%;
+ height: 60%;
+ margin: 32px 24px 32px 24px;
+}
+
+.leftside{
+  width: 30%;
+}
+
+.text h1{
+  font-size: 35px;
+  width: 90%;
+  height: auto;
+}
+
+.button {
+  font-size: 16px;
+  text-align: center;
+  background-color: gray;
+  color: white;
+  padding-top:8px;
+  padding-bottom: 8px;
+}
+
+header nav ul {
+  display: flex;
+  width:90%;
+
+}
+
+@media only screen and (max-width: 760px) {
+.cont .one{
+  flex-direction: column;
+}
+
+.picture img{
+  width:100%;
+  margin: 0 0 0 0;
+}
+
+.text{
+margin:0 0;;
+  width: 100%;
+  text-align: center;
+}
+
+.text h1{
+  width: 100%;
+}
+
+.leftside{
+  width: 90%;
+}
+
+}
+
+.two{
+}
+@media only screen and (max-width: 760px) {
+
+.cont .two{
+  margin-top:0;
+  background-color: white;
+  display: block;
+  align-items: center;
+  padding: 32px 24px 32px 24px;
+}
 }
