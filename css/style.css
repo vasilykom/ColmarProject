@@ -4,6 +4,10 @@ html {
   width: 100%;
 }
 
+p, a{
+  font-size: 12px;
+}
+
 *{
   margin: 0px;
   padding: 0px;
@@ -173,6 +177,8 @@ header nav ul {
   background-color: white;
   align-items: center;
   padding: 32px 24px 32px 24px;
+  border-right: 1px solid #DCDCDC;
+
 }
 
 .two img{
@@ -205,16 +211,44 @@ header nav ul {
   display: flex;
 }
 
+.two-right{
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+}
 .block{
-  padding: 32px 24px 32px 0;
+  display: flex;
+  align-items: center;
   width: 100%;
 }
 
-.block-pic{
-  width: 35%;
+
+.block img{
+  max-width: 35%;
+  height: auto;
+  padding: 16px;
 }
 
-.block-pic img{
-  width: 100%;
-  height:auto;
+.block-description{
+  max-width: 65%;
+  height: auto;
+}
+
+.block-description h1{
+  font-size: 16px
+}
+
+.block-description a{
+  text-decoration: none;
+}
+
+.block-description p{
+white-space: pre-line;
+}
+
+.block.third{
+  background-color: #DCDCDC;
+}
+@media only screen and (max-width: 760px) {
+
 }
