@@ -215,6 +215,7 @@ header nav ul {
   display: flex;
   flex-direction: column;
   padding-top: 16px;
+  width: 40%;
 }
 .block{
   display: flex;
