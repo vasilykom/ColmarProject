@@ -4,13 +4,18 @@ html {
   width: 100%;
 }
 
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 .logo h1{
-  font-size: 32px;
+  font-size: 16px;
 }
 
 .first{
   font-weight: bold;
-  font-size: 34px;
+  font-size: 16px;
 }
 
 .second{
@@ -19,17 +24,16 @@ font-weight: 100;
 }
 
 img{
-  height:64px;
+  height:32px;
 }
 
 header{
   top:0;
   max-width: 100%;
-  margin: 0 0;
 }
 
 .desktop {
-  margin: -8px 24px;
+  margin: 0 24px;
   display: flex;
   align-items: center;
   background-color: white;
@@ -66,9 +70,11 @@ header .mobile {
   display: none;
 }
 
+.container{
+height: 64px;
+}
+
 .container .mobile{
-  height: 64px;
-  margin: -8px 0 0 -36px;
   width:100%;
 }
 
@@ -98,27 +104,28 @@ li a {
 }
 
 .cont .one{
-  margin-top:8px;
-  padding-bottom: 32px;
   background-color: 	#DCDCDC;
   display: flex;
   align-items: center;
 }
 
-.picture img{
- width: 60%;
- height: 60%;
- margin: 32px 24px 32px 24px;
+.one-pic img{
+ width: 100%;
+ height: auto;
+}
+
+.one-pic{
+margin: 32px 24px 32px 24px;
+width: 60%;
 }
 
 .leftside{
-  width: 30%;
+  width: 40%;
 }
 
-.text h1{
-  font-size: 35px;
-  width: 90%;
+.text{
   height: auto;
+  width: 80%;
 }
 
 .button {
@@ -128,49 +135,86 @@ li a {
   color: white;
   padding-top:8px;
   padding-bottom: 8px;
+  width: 100%;
 }
 
 header nav ul {
   display: flex;
   width:90%;
-
 }
 
 @media only screen and (max-width: 760px) {
 .cont .one{
   flex-direction: column;
+  padding-bottom: 32px;
 }
 
-.picture img{
+.one-pic{
   width:100%;
-  margin: 0 0 0 0;
+  margin: 0;
 }
 
 .text{
-margin:0 0;;
   width: 100%;
   text-align: center;
 }
 
-.text h1{
-  width: 100%;
-}
-
 .leftside{
-  width: 90%;
+  width: 80%;
+}
 }
 
-}
 
 .two{
-}
-@media only screen and (max-width: 760px) {
-
-.cont .two{
-  margin-top:0;
+  width:60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
-  display: block;
   align-items: center;
   padding: 32px 24px 32px 24px;
 }
+
+.two img{
+  width:100%;
+  height: auto;
+}
+
+.two .text{
+  text-align: left;
+  width: 100%;
+}
+
+.two .text h1{
+  font-size: 24px;
+  padding-top:32px;
+  padding-bottom: 24px;
+}
+
+.two-right{
+  width: 40%;
+}
+
+@media only screen and (max-width: 760px) {
+.two{
+  display: none;
+}
+}
+
+.container-two{
+  display: flex;
+}
+
+.block{
+  padding: 32px 24px 32px 0;
+  width: 100%;
+}
+
+.block-pic{
+  width: 35%;
+}
+
+.block-pic img{
+  width: 100%;
+  height:auto;
 }
