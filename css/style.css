@@ -127,6 +127,11 @@ width: 60%;
   width: 40%;
 }
 
+.leftside h1{
+  font-size: 24px;
+  font-weight: bold;
+}
+
 .text{
   height: auto;
   width: 80%;
@@ -193,6 +198,7 @@ header nav ul {
 
 .two .text h1{
   font-size: 24px;
+  font-weight: bold;
   padding-top:32px;
   padding-bottom: 24px;
 }
@@ -235,8 +241,11 @@ header nav ul {
   height: auto;
 }
 
-.block-description h1{
-  font-size: 16px
+
+
+.block-description h3{
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .block-description a{
@@ -296,17 +305,23 @@ a, p{
 }
 }
 
-.three h1{
+.three{
+  border-top: 1px solid #DCDCDC;
+}
+
+.Start-learning h1{
+  font-size: 32px;
   text-align: center;
-  background-color: ghostwhite;
+  background-color: lavender;
   padding-top: 32px;
+  font-weight: bold;
 }
 
 .block-block{
   padding:32px 56px;
   display: flex;
   flex-wrap: wrap;
-  background-color: ghostwhite;
+  background-color: lavender;
   flex-direction: row;
   align-content: center;
 }
@@ -327,6 +342,7 @@ a, p{
 
 .block-block-description {
   padding: 16px 16px 24px 16px;
+  background-color: white;
 }
 
 .course{
@@ -335,8 +351,12 @@ margin-top: 8px;
 margin-bottom: 8px;
 }
 
+.block-block-description h2{
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 760px) {
-  .block-block{
+  .block-block {
     padding: 16px 16px;
     display: block;
     max-width: 100%;
@@ -344,29 +364,31 @@ margin-bottom: 8px;
     padding-bottom: 0;
 
   }
-.block-1-picture{
+ .block-1-picture{
   margin:0;
   padding: 0;
-}
-
-  .block-1-picture img,.block-1-picture p{
-    display: none;
-  }
-.block-1-picture{
   max-width:100%;
 }
-  .block-block-description{
+
+ .block-1-picture img,.block-block-description p{
+    display: none;
+  }
+
+.block-block-description{
   background-color: #DCDCDC;
   max-width: 100%;
   margin-bottom:8px;
   }
 
-  }
 
-
+}
 
   .four-header h1{
     text-align: center;
-    background-color: ghostwhite;
+    background-color: white;
     padding: 32px 0;
+    font-size: 24px;
+    font-weight: bold;
+    border-top: 1px solid #DCDCDC;
+
 }
