@@ -174,7 +174,7 @@ header nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
+  background-color: ghostwhite;
   align-items: center;
   padding: 32px 24px 32px 24px;
   border-right: 1px solid #DCDCDC;
@@ -199,6 +199,7 @@ header nav ul {
 
 .two-right{
   width: 40%;
+  background: ghostwhite;
 }
 
 @media only screen and (max-width: 760px) {
@@ -225,9 +226,8 @@ header nav ul {
 
 
 .block img{
-  max-width: 35%;
+  width: 100%;
   height: auto;
-  padding: 16px;
 }
 
 .block-description{
@@ -250,6 +250,123 @@ white-space: pre-line;
 .block.third{
   background-color: #DCDCDC;
 }
+
+.mobile{
+  display: none;
+}
+
+.desktop-two{
+  max-width:35%;
+  padding: 16px;
+}
+
+.mobile-two{
+  display: none;
+  padding: 16px;
+
+}
+
 @media only screen and (max-width: 760px) {
 
+.desktop-two{
+  display: none;
+}
+.mobile-two{
+  display: block;
+}
+.block{
+  width: 100%;
+  display: block;
+}
+.two-right{
+  width: 100%;
+}
+.block-description{
+  text-align: left;
+  max-width: 100%;
+  padding: 0px 32px 48px 32px;
+  margin: 0;
+}
+.block.third{
+  background-color: ghostwhite;
+}
+
+a, p{
+  font-size: 20px;
+}
+}
+
+.three h1{
+  text-align: center;
+  background-color: ghostwhite;
+  padding-top: 32px;
+}
+
+.block-block{
+  padding:32px 56px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: ghostwhite;
+  flex-direction: row;
+  align-content: center;
+}
+
+.block-1-picture{
+ height: auto;
+ max-width: 30%;
+ background-color: ghostwhite;
+ margin-right: 16px;
+ margin-left: 16px;
+ margin-bottom: 32px;
+}
+
+.block-1-picture img{
+    max-width:100%;
+    height:auto;
+}
+
+.block-block-description {
+  padding: 16px 16px 24px 16px;
+}
+
+.course{
+font-size: 16px;
+margin-top: 8px;
+margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 760px) {
+  .block-block{
+    padding: 16px 16px;
+    display: block;
+    max-width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+  }
+.block-1-picture{
+  margin:0;
+  padding: 0;
+}
+
+  .block-1-picture img,.block-1-picture p{
+    display: none;
+  }
+.block-1-picture{
+  max-width:100%;
+}
+  .block-block-description{
+  background-color: #DCDCDC;
+  max-width: 100%;
+  margin-bottom:8px;
+  }
+
+  }
+
+
+
+  .four-header h1{
+    text-align: center;
+    background-color: ghostwhite;
+    padding: 32px 0;
 }
