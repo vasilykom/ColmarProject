@@ -435,13 +435,10 @@ video{
 
 }
 
-four-right-side .block.four{
-  background-color: #DCDCDC;
-}
-
 .four-right-side{
   max-width: 40%;
   height: auto;
+  background-color: ghostwhite;
 }
 
 
@@ -476,6 +473,16 @@ four-right-side .block.four{
 .four-image-description h3{
   font-weight: bold;
 }
+.footer p{
+  font-size: 10px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px 16px;
+}
 
 @media only screen and (max-width: 760px) {
   .four-header h1{
@@ -504,6 +511,10 @@ four-right-side .block.four{
     max-width:100%;
     display: block;
   }
+
+.footer .right p{
+  display: none;
+}
 
 
 }
