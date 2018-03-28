@@ -175,7 +175,7 @@ header nav ul {
 
 
 .two{
-  width:60%;
+  max-width:60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -186,7 +186,7 @@ header nav ul {
 }
 
 .two img{
-  width:100%;
+  max-width:100%;
   height: auto;
 }
 
@@ -223,19 +223,20 @@ header nav ul {
 
 .block{
   display: flex;
-  align-items: center;
   max-width: 100%;
 }
 
 
 .block img{
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 .block-description{
   max-width: 65%;
   height: auto;
+  padding: 16px 0;
+
 }
 
 .block-description h3{
@@ -386,7 +387,6 @@ margin-bottom: 8px;
 
 .block-block-description: last-child{
 }
-
 }
 
 .four-header h1{
@@ -398,16 +398,20 @@ margin-bottom: 8px;
 }
 
 video{
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
+.video img{
+  width: 100%;
+  height: auto;
+}
 .four{
   display: flex;
 
 }
 .four-left-side{
-  width: 100%;
+  max-width: 60%;
   height: auto;
   padding: 0 24px 24px 24px;
   background-color: ghostwhite;
@@ -442,7 +446,6 @@ four-right-side .block.four{
 .four-block{
   height: auto;
   display: flex;
-  align-items: center;
   max-width: 100%;
 }
 
@@ -458,4 +461,11 @@ four-right-side .block.four{
 
 .four-block.background{
   background-color: #DCDCDC;
+}
+
+
+.four-image-description{
+  max-width: 65%;
+  height: auto;
+  padding: 16px 0;
 }
