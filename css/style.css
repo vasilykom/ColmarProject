@@ -319,7 +319,7 @@ a, p{
 
 .block-block{
   padding:32px 56px;
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   background-color: lavender;
   flex-direction: row;
@@ -343,6 +343,7 @@ a, p{
 .block-block-description {
   padding: 16px 16px 24px 16px;
   background-color: white;
+  text-align:center;
 }
 
 .course{
@@ -354,6 +355,14 @@ margin-bottom: 8px;
 .block-block-description h2{
   font-weight: bold;
 }
+@media (max-width: 1090px){
+  .block-block {
+    padding: 32px 0;
+  }
+  .block-1-picture {
+    max-width: 29%;
+  }
+}
 
 @media only screen and (max-width: 760px) {
   .block-block {
@@ -361,7 +370,7 @@ margin-bottom: 8px;
     display: block;
     max-width: 100%;
     margin-bottom: 0;
-    padding-bottom: 0;
+    padding-bottom: 24px;
 
   }
  .block-1-picture{
@@ -378,8 +387,12 @@ margin-bottom: 8px;
   background-color: #DCDCDC;
   max-width: 100%;
   margin-bottom:8px;
+  display: block;
+  vertical-align: middle;
   }
 
+.block-block-description: last-child{
+}
 
 }
 
