@@ -221,8 +221,10 @@ header nav ul {
   display: flex;
 }
 
+/* centered */
 .block{
   display: flex;
+  align-items: center;
   max-width: 100%;
 }
 
@@ -446,6 +448,7 @@ four-right-side .block.four{
 .four-block{
   height: auto;
   display: flex;
+  align-items: center;
   max-width: 100%;
 }
 
@@ -468,4 +471,8 @@ four-right-side .block.four{
   max-width: 65%;
   height: auto;
   padding: 16px 0;
+}
+
+.four-image-description h3{
+  font-weight: bold;
 }
