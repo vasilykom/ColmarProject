@@ -180,7 +180,6 @@ header nav ul {
   flex-direction: column;
   align-items: center;
   background-color: ghostwhite;
-  align-items: center;
   padding: 32px 24px 32px 24px;
   border-right: 1px solid #DCDCDC;
 
@@ -206,6 +205,10 @@ header nav ul {
 .two-right{
   width: 40%;
   background: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  width: 40%;
 }
 
 @media only screen and (max-width: 760px) {
@@ -218,16 +221,10 @@ header nav ul {
   display: flex;
 }
 
-.two-right{
-  display: flex;
-  flex-direction: column;
-  padding-top: 16px;
-  width: 40%;
-}
 .block{
   display: flex;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
 }
 
 
@@ -240,8 +237,6 @@ header nav ul {
   max-width: 65%;
   height: auto;
 }
-
-
 
 .block-description h3{
   font-size: 16px;
@@ -387,8 +382,6 @@ margin-bottom: 8px;
   background-color: #DCDCDC;
   max-width: 100%;
   margin-bottom:8px;
-  display: block;
-  vertical-align: middle;
   }
 
 .block-block-description: last-child{
@@ -396,12 +389,73 @@ margin-bottom: 8px;
 
 }
 
-  .four-header h1{
+.four-header h1{
     text-align: center;
-    background-color: white;
+    background-color: ghostwhite;
     padding: 32px 0;
     font-size: 24px;
     font-weight: bold;
-    border-top: 1px solid #DCDCDC;
+}
 
+video{
+  width: 100%;
+  height: auto;
+}
+
+.four{
+  display: flex;
+
+}
+.four-left-side{
+  width: 100%;
+  height: auto;
+  padding: 0 24px 24px 24px;
+  background-color: ghostwhite;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.four-text p{
+  max-width: 100%;
+}
+
+.four-text h1{
+  font-size: 24px;
+  font-weight: bold;
+  padding-top:32px;
+  padding-bottom: 24px;
+  max-width: 100%;
+
+}
+
+four-right-side .block.four{
+  background-color: #DCDCDC;
+}
+
+.four-right-side{
+  max-width: 40%;
+  height: auto;
+}
+
+
+.four-block{
+  height: auto;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.four-image img{
+  max-width: 100%;
+  height: auto;
+}
+
+.four-image{
+  padding: 16px;
+  max-width: 35%;
+}
+
+.four-block.background{
+  background-color: #DCDCDC;
 }
