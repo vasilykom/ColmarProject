@@ -114,13 +114,13 @@ li a {
 }
 
 .one-pic img{
- width: 100%;
+ max-width: 100%;
  height: auto;
 }
 
 .one-pic{
 margin: 32px 24px 32px 24px;
-width: 60%;
+max-width: 60%;
 }
 
 .leftside{
