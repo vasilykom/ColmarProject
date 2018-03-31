@@ -2,6 +2,8 @@ html {
   font-family: 'Open Sans', serif;
   font-size: 16px;
   width: 100%;
+  color: #454545;
+
 }
 
 p, a{
@@ -11,7 +13,10 @@ p, a{
 *{
   margin: 0px;
   padding: 0px;
+  font-size: 16px;
+
 }
+
 
 .logo h1{
   font-size: 16px;
@@ -25,6 +30,8 @@ p, a{
 .second{
 color: grey;
 font-weight: 100;
+font-size: 16px;
+
 }
 
 img{
@@ -79,7 +86,12 @@ height: 64px;
 }
 
 .container .mobile{
-  width:100%;
+  max-width:100%;
+}
+
+header nav ul {
+  display: flex;
+  width:90%;
 }
 
 @media only screen and (max-width: 900px){
@@ -124,7 +136,7 @@ max-width: 60%;
 }
 
 .leftside{
-  width: 40%;
+  max-width: 40%;
 }
 
 .leftside h1{
@@ -134,7 +146,7 @@ max-width: 60%;
 
 .text{
   height: auto;
-  width: 80%;
+  max-width: 100%;
 }
 
 .button {
@@ -144,13 +156,9 @@ max-width: 60%;
   color: white;
   padding-top:8px;
   padding-bottom: 8px;
-  width: 100%;
+  max-width: 100%;
 }
 
-header nav ul {
-  display: flex;
-  width:90%;
-}
 
 @media only screen and (max-width: 760px) {
 .cont .one{
@@ -158,18 +166,31 @@ header nav ul {
   padding-bottom: 32px;
 }
 
+.button{
+  margin-top: 24px;
+}
+
+.text h1{
+  margin-bottom: 32px;
+}
+
 .one-pic{
-  width:100%;
-  margin: 0;
+  max-width:100%;
+  margin: 32px 0 24px 0;
 }
 
 .text{
-  width: 100%;
-  text-align: center;
+  max-width: 100%;
+  text-align: left;
+  padding:0 16px;
+  margin: 0;
+
 }
 
 .leftside{
-  width: 80%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
 }
 }
 
@@ -192,7 +213,7 @@ header nav ul {
 
 .two .text{
   text-align: left;
-  width: 100%;
+  max-width: 100%;
 }
 
 .two .text h1{
@@ -214,6 +235,15 @@ header nav ul {
 @media only screen and (max-width: 760px) {
 .two{
   display: none;
+}
+
+.two-right{
+  padding-top: 0;
+}
+
+.mobile-two img{
+ width: 100%;
+ height: auto;
 }
 }
 
@@ -238,6 +268,7 @@ header nav ul {
   max-width: 65%;
   height: auto;
   padding: 16px 0;
+  padding-right: 16px;
 
 }
 
