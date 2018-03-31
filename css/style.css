@@ -147,6 +147,7 @@ max-width: 60%;
 .text{
   height: auto;
   max-width: 100%;
+  padding-right: 16px;
 }
 
 .button {
@@ -159,19 +160,18 @@ max-width: 60%;
   max-width: 100%;
 }
 
-
-@media only screen and (max-width: 760px) {
-.cont .one{
-  flex-direction: column;
-  padding-bottom: 32px;
+.text h1{
+  margin-bottom: 32px;
 }
 
 .button{
   margin-top: 24px;
 }
 
-.text h1{
-  margin-bottom: 32px;
+@media only screen and (max-width: 760px) {
+.cont .one{
+  flex-direction: column;
+  padding-bottom: 32px;
 }
 
 .one-pic{
